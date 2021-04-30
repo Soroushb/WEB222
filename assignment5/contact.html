@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div id="header-wrapper">
+                <div id="title">
+                    <h1>Contact Us</h1>
+                </div>
+                <a href="index.html">
+                <div id="back"><span class="material-icons">
+                    arrow_back_ios
+                    </span>BACK</div>
+                </a>
+            </div>
+
+            <main>
+
+                <div id="content">
+                    <form action="https://httpbin.org/post" method="POST">
+                    <label for="name">Full Name</label>
+                    <input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    type="text"
+                    autofocus
+                    spellcheck="false"
+                    autocapitalize="on"
+                    placeholder="Full Name"
+                    tabindex="1"
+                    required>
+
+                    <label for="email-contact">Email Address</label>
+                    <input
+                    id="email-contact"
+                    name="email"
+                    autocomplete="email"
+                    type="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    placeholder="Email Address"
+                    tabindex="2"
+                    required>
+
+                    <label for="address">Address</label>
+                    <input
+                    id="address"
+                    name="address"
+                    autocomplete="street-address"
+                    type="text"
+                    spellcheck="false"
+                    autocapitalize="false"
+                    placeholder="Address"
+                    tabindex="3"
+                    required>
+
+                    <label for="city">City</label>
+                    <input 
+                    id="city"
+                    name="city"
+                    type="text"
+                    tabindex="4"
+                    list="common-cities"
+                    placeholder="city"
+                    spellcheck="true"
+                    autocapitalize="true"
+                    tabindex="4"
+                    required
+                    >
+                    <datalist id="common-cities">
+                        <option value="Toronto"></option>
+                        <option value="Vancouver"></option>
+                        <option value="Montreal"></option>
+                        <option value="Niagara Falls"></option>
+                        <option value="Victoria"></option>
+                        <option value="Halifax"></option>
+                        <option value="Quebec City"></option>
+                        <option value="Calgary"></option>
+                    </datalist>
+
+                    <label for="postal-code">Postal Code</label>
+                    <input 
+                    id="postal-code"
+                    name="postal-code"
+                    type="text"
+                    tabindex="5"
+                    placeholder="Postal Code"
+                    pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z][0-9][A-Z][0-9]$|^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] [0-9][A-Z][0-9]$"
+                    spellcheck="false"
+                    autocomplete="postal-code"
+                    autocapitalize="true"
+                    required>
+
+                    <label for="radio-option">Radio Option</label>
+                    <select id="radio-option"name="radio-option">
+                        <option value="Question">Question</option>
+                        <option value="Comment">Comment</option>
+                        <option id="problem" value="Order Problem">Order Problem</option>
+                    </select>
+                    <div id="ordernum">
+                    <label for="ordernumber">Order Number</label>
+                    <input
+                    id="ordernumber"
+                    name="ordernumber"
+                    type="number"
+                    tabindex="6"
+                    placeholder="Order Number"
+                    >
+                </div>
+                    
+                    <label for="feedback">Message</label>
+                    <textarea id="feedback" name="feedback" rows="8" tabindex="7"
+                    placeholder="Enter Your Message..." required></textarea>
+
+                    <input type="submit" name="submit-message" value="Submit" tabindex="8">
+
+                    <input
+                    id="hidden"
+                    type="hidden"
+                    value="Soroush Bahrami">
+
+                
+                     
+                    
+            
+                    
+                    
+
+
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <!--footer-->
+                <p id="footer-title">BACK TO THE SIXTIES</p>
+                <!--title of website in the footer-->
+                <br /><!--next line-->
+                <a href="https://www.instagram.com/__.soroush.__" class="fa fa-instagram"></a
+                ><!--absolute url real account-->
+                <a href="https://www.facebook.com/soroush.bahrami/" class="fa fa-facebook"></a
+                ><!--absolute url real account-->
+                <form id="footerform" action="https://formspree.io/sbahrami41@yahoo.com" method="POST">
+            <input
+            id="email"
+            name="email-address"
+            autocomplete="email"
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            spellcheck="false"
+            autocapitalize="off"
+            placeholder="Email Address"
+            required>
+            <input type="submit" name="submit" value="Subscribe" tabindex="5">
+                </form>
+              </footer>
+        </header>
+        <script src="script.js"></script>
+    </body>
+
+</html>
