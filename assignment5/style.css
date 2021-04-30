@@ -1,0 +1,414 @@
+/* Add any CSS you need to this file. */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 20px; /* content 20px margin on all sides */
+}
+
+html {
+  background-color: #b69b67; /* html background color */
+}
+
+#header-wrapper {
+  font-family: 'Righteous';
+  background-color: #1c2a22;
+  display: flex;
+  justify-content: space-around;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  color: #fdc200;
+  text-shadow: 1px 1px 1px #aa8916;
+  padding-top: 24px;
+}
+
+#discription {
+  color: #fdc200;
+}
+
+#icons {
+  display: flex;
+  width: 90px;
+  padding-top: 33px;
+}
+
+#icons img {
+  padding-bottom: 30px;
+  width: 500px;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  background-color: #1c2a22;
+  width: 100px;
+  padding-top: 20px;
+  justify-content: space-evenly;
+  padding-left: 25px;
+  width: auto;
+  border-top: solid 1px #fdc200;
+}
+
+main nav div {
+  text-align: center;
+  padding-bottom: 25px;
+  padding-right: 20px;
+}
+
+main nav div p {
+  font-family: 'Yanone Kaffeesatz';
+  margin: 2px;
+}
+
+#record-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+  margin-left: 18px;
+  margin-top: 15px;
+  padding: 20px;
+  overflow: auto;
+  background-color: #000c0c;
+}
+
+#film-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+  margin-left: 18px;
+  margin-top: 15px;
+  padding: 20px;
+  overflow: auto;
+  background-color: #000c0c;
+}
+
+#columns {
+  display: flex;
+}
+
+#records {
+  display: flex;
+  font-family: 'Yanone Kaffeesatz';
+  width: 30%;
+  max-width: 100%;
+  background-color: #000c0c;
+  color: #fdc200;
+  border: solid 2px #aa8916;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#films {
+  display: flex;
+  font-family: 'Yanone Kaffeesatz';
+  width: 30%;
+  max-width: 100%;
+  background-color: #000c0c;
+  color: #fdc200;
+  border: solid 2px #aa8916;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.album-cover {
+  margin-top: 20px;
+}
+
+.film-cover {
+  margin-top: 20px;
+}
+
+.record {
+  flex-grow: 1;
+  width: 30%;
+  max-width: 100%;
+  margin: 5px;
+  padding: 10px;
+  padding-bottom: 18px;
+  padding-right: 15px;
+  border: solid 1px #aa8916;
+}
+
+button {
+  margin-right: 23px;
+  margin-bottom: 10px;
+  background-color: #e7cf8a;
+  font-family: 'Bebas Neue';
+}
+
+button i {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+button p {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.record img {
+  margin-left: 28px;
+}
+
+.film img {
+  margin-left: 50px;
+}
+
+.film {
+  flex-grow: 1;
+  width: 30%;
+  max-width: 100%;
+  margin: 5px;
+  padding: 10px;
+  padding-bottom: 2.5px;
+  padding-right: 22px;
+  border: solid 1px #aa8916;
+}
+
+#record-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#film-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.album-title {
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  font-size: 150%;
+  color: #fdc200;
+}
+
+.film-title {
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  font-size: 150%;
+  color: #fdc200;
+}
+
+.album-desc {
+  font-family: 'Rubik';
+  font-size: 15px;
+  color: #aa8916;
+}
+
+.film-desc {
+  font-family: 'Rubik';
+  font-size: 15px;
+  color: #aa8916;
+}
+
+.album-info {
+  justify-content: center;
+  flex-flow: column;
+}
+
+.film-info {
+  justify-content: center;
+  flex-flow: column;
+}
+
+#record-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#film-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  background-color: #1c2a22;
+  color: #b69b67;
+}
+
+#footer-title {
+  font-family: 'Bebas Neue';
+  font-size: 130%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.fa {
+  padding: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.fa-instagram {
+  color: #b69b67;
+}
+
+.fa-facebook {
+  color: #b69b67;
+}
+
+.fa-envelope {
+  color: #b69b67;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+main {
+  overflow: hidden;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+main img {
+  border: solid 3px #aa8916;
+}
+
+nav button {
+  border: solid 3px #aa8916;
+  color: #fdc200;
+  background-color: #1c2a22;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+  font-size: 100%;
+  font-family: 'Bebas Neue';
+  width: 120px;
+  background-color: #aa8916;
+  color: #1f2833;
+}
+
+#footerform {
+  display: grid;
+  justify-content: right;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+#email {
+  width: 100%;
+  padding: 7px;
+  background-color: #b69b67;
+}
+
+input:focus {
+  outline: 2px solid black;
+  background-color: #ddd;
+}
+
+input[type='submit'] {
+  background-color: #b69b67;
+}
+
+input[type='submit']:hover {
+  background-color: #ddd;
+}
+
+#icons p {
+  color: #fdc200;
+  padding-left: 80px;
+}
+
+#back {
+  color: #fdc200;
+  padding-top: 50px;
+  font-size: 120%;
+}
+
+#content {
+  width: 100%;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #000c0c;
+}
+
+form label {
+  color: #fdc200;
+  font-family: 'Bebas Neue';
+}
+
+input {
+  font-size: 100%;
+  font-family: 'Rubik';
+  width: 300px;
+  background-color: #b69b67;
+  color: #1f2833;
+  margin-bottom: 10px;
+}
+
+select {
+  margin-top: 20px;
+  font-size: 100%;
+  font-family: 'Bebas Neue';
+  width: 120px;
+  background-color: #b69b67;
+  color: #1f2833;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 100%;
+  font-family: 'Rubik';
+  width: 300px;
+  background-color: #b69b67;
+  color: #1f2833;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+}
+
+#radio-option {
+  width: 300px;
+}
+
+label {
+  font-size: 150%;
+  padding-top: 30px;
+}
+
+#ordernum {
+  display: grid;
+  margin-top: 10px;
+}
